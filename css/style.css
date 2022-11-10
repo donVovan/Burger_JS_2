@@ -149,6 +149,10 @@ body {
   text-decoration: underline;
 }
 
+.menu__arrow {
+  display: none;
+}
+
 /* ----- */
 body._pc .menu__list > li:hover .menu__sub-list {
   opacity: 1;
@@ -156,6 +160,35 @@ body._pc .menu__list > li:hover .menu__sub-list {
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   pointer-events: all;
+}
+
+body._touch .menu__list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body._touch .menu__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #fff;
 }
 
 /* ----- */
