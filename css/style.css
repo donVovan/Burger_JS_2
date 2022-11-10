@@ -44,6 +44,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
 }
@@ -126,7 +130,7 @@ body {
   .menu__body {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -135,16 +139,21 @@ body {
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
-  .menu__body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    background-color: #912105;
-    z-index: 2;
-  }
+}
+
+.menu__body._active {
+  left: 0;
+}
+
+.menu__body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background-color: #912105;
+  z-index: 2;
 }
 
 .menu__list li {

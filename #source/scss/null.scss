@@ -36,6 +36,9 @@ body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+body._lock {
+    overflow: hidden;
+}
 .wrapper {
     min-height: 100%;
 }
