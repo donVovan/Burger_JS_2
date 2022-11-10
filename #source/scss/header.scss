@@ -112,6 +112,17 @@ body {
             > li {
                 display: flex;
                 align-items: center;
+                &._active{
+                    .menu__sub-list {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translate(0px, 0px);
+                        pointer-events: all;
+                    }
+                    .menu__arrow {
+                        transform: rotate(-180deg);
+                    }
+                }
             }
         }
         .menu__link {
