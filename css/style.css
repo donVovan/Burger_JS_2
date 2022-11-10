@@ -129,6 +129,18 @@ body {
   margin: 0;
 }
 
+@media (min-width: 767px) {
+  .menu__sub-list {
+    -webkit-transform: translate(0px, 10%);
+            transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+}
+
 .menu__sub-link {
   color: #fff;
 }

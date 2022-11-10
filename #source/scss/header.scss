@@ -72,6 +72,13 @@
                 margin: 0;
             }
         }
+        @media (min-width: 767px) {
+            transform: translate(0px, 10%);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all 0.3s ease 0s;
+        }
     }
 
     &__sub-link {
