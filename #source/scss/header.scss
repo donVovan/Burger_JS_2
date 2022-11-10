@@ -63,6 +63,19 @@
                 top: 50%;
                 transform: scale(1) translate(0px, -50%);
             }
+            &._active {
+                span {
+                    transform: scale(0) translate(0px, -50%);
+                }
+                &::before {
+                    top: 50%;
+                    transform: rotate(-45deg) translate(0px, -50%);
+                }
+                &::after {
+                    bottom: 50%;
+                    transform: rotate(45deg) translate(0px, 50%);
+                }
+            }
         }
     }
 
