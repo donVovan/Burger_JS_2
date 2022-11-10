@@ -150,6 +150,15 @@ body {
 }
 
 /* ----- */
+body._pc .menu__list > li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+/* ----- */
 .page {
   padding: 90px 0px 30px 0;
 }

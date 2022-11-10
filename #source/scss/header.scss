@@ -89,3 +89,20 @@
     }
 }
 /* ----- */
+body {
+    &._pc{
+        .menu__list {
+            > li {
+                &:hover {
+                    .menu__sub-list {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translate(0px, 0px);
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ----- */
